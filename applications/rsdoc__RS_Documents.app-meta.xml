@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Opero Documents</label>
+    <logo>rsdoc__Google_Apps_Merge_Images/rsdoc__RS_Documents_Logo.png</logo>
+    <tabs>rsdoc__RS_Documents_Configuration</tabs>
+    <tabs>rsdoc__Document_Action__c</tabs>
+    <tabs>rsdoc__Document_Request__c</tabs>
+    <tabs>Generated_Invoice__c</tabs>
+    <tabs>Ammendment__c</tabs>
+    <tabs>Sales_Bonus__c</tabs>
+    <tabs>Adjustments_and_Receipts__c</tabs>
+    <tabs>QC_Record__c</tabs>
+    <tabs>Installation_Documents__c</tabs>
+    <tabs>Commission_Sheet__c</tabs>
+    <tabs>Interview__c</tabs>
+    <tabs>Canvass_Book__c</tabs>
+    <tabs>Canvass_weekly_Log__c</tabs>
+    <tabs>Employee_Video__c</tabs>
+    <tabs>Onboarding__c</tabs>
+    <tabs>Dialpad__Dialpad_Call_Centers__c</tabs>
+    <tabs>Customer_Engagement__c</tabs>
+    <tabs>Sales</tabs>
+    <tabs>Objective__c</tabs>
+    <tabs>Flag__c</tabs>
+    <tabs>Reminder__c</tabs>
+    <tabs>Comment__c</tabs>
+    <tabs>Reply__c</tabs>
+    <tabs>Record_of_Pay__c</tabs>
+    <tabs>Nudge__c</tabs>
+    <tabs>Record_Sharing__c</tabs>
+</CustomApplication>

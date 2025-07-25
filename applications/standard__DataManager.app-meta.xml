@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Data Manager</label>
+    <navType>Standard</navType>
+    <tabs>standard-AnalyticsDataManager</tabs>
+    <tabs>Dialpad__Dialpad_Call_Centers__c</tabs>
+    <tabs>Customer_Engagement__c</tabs>
+    <tabs>Sales</tabs>
+    <tabs>Objective__c</tabs>
+    <tabs>Flag__c</tabs>
+    <tabs>Reminder__c</tabs>
+    <tabs>Comment__c</tabs>
+    <tabs>Reply__c</tabs>
+    <tabs>Record_of_Pay__c</tabs>
+    <tabs>Nudge__c</tabs>
+    <tabs>Record_Sharing__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

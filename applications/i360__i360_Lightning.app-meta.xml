@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#38A7C0</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>improveit! 360 CRM</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>improveit 360 Lightning</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>i360__Setup_Wizard</tabs>
+    <tabs>i360__Prospect__c</tabs>
+    <tabs>i360__Lead_Source__c</tabs>
+    <tabs>i360__Marketing_Task__c</tabs>
+    <tabs>i360__Appointment__c</tabs>
+    <tabs>i360__Sale__c</tabs>
+    <tabs>i360__Receipt__c</tabs>
+    <tabs>i360__Project__c</tabs>
+    <tabs>i360__Project_Activity__c</tabs>
+    <tabs>i360__Project_Cost__c</tabs>
+    <tabs>i360__Staff_Calendar</tabs>
+    <tabs>i360__Staff__c</tabs>
+    <tabs>i360__Marketing_Source__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>i360__Project_Template__c</tabs>
+    <tabs>i360__eLead__c</tabs>
+    <tabs>i360__eCommunication__c</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>i360__Merge_Candidates</tabs>
+    <tabs>i360__Time_Block_Manager</tabs>
+    <tabs>i360__Appointment_Assignment</tabs>
+    <tabs>i360__Resolution_Center</tabs>
+    <tabs>i360__Lead_Entry</tabs>
+    <tabs>i360__Quote__c</tabs>
+    <tabs>i360__Quote_Template__c</tabs>
+    <tabs>i360__Quote_Item__c</tabs>
+    <tabs>i360__Purchase_Order__c</tabs>
+    <tabs>i360__Settings</tabs>
+    <tabs>i360__OAuthService__c</tabs>
+    <tabs>i360__Inbound_Text__c</tabs>
+    <tabs>i360__Production_Grid</tabs>
+    <tabs>i360__Department_Dashboard__c</tabs>
+    <tabs>i360__Survey_Template__c</tabs>
+    <tabs>i360__Survey__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>i360__improveit_360_Lightning_UtilityBar</utilityBar>
+</CustomApplication>

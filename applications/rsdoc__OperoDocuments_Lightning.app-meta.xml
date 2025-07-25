@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#27292B</headerColor>
+        <logo>rsdoc__opero</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Configure Generate Documents</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Opero Documents</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>rsdoc__RS_Documents_Configuration</tabs>
+    <tabs>rsdoc__Document_Action__c</tabs>
+    <tabs>rsdoc__Document_Request__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>
