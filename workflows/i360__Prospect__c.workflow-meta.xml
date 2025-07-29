@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>i360__Send_Welcome_Email</fullName>
+        <description>Send Welcome Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>i360__Primary_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>i360__Secondary_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>i360__Templates_Prospect/i360__New_Lead_Welcome_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>i360__Welcome_Email_Sent_Date</fullName>
+        <field>i360__Welcome_Email_Sent_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Welcome Email Sent Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>i360__Send Welcome Email</fullName>
+        <actions>
+            <name>i360__Send_Welcome_Email</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>i360__Welcome_Email_Sent_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>i360__Welcome_Email_Sent</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Send an email to any new Prospects.</description>
+        <formula>NOT(ISBLANK( i360__Primary_Email__c )) &amp;&amp;  NOT( i360__Opt_Out_Email__c ) &amp;&amp;   i360__Send_Welcome_Email__c  &amp;&amp;  ISBLANK(  i360__Welcome_Email_Sent_Date__c  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>i360__Welcome_Email_Sent</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>i360__Prospect__c.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Welcome Email Sent</subject>
+    </tasks>
+</Workflow>

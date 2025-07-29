@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_1</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_Checkbox_Update</fullName>
+        <field>Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Approved Checkbox Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_Checkbox_Update_1</fullName>
+        <field>Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Approved Checkbox Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_Date_Change</fullName>
+        <field>Approved_On__c</field>
+        <formula>Today()</formula>
+        <name>Approved Date Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_On</fullName>
+        <field>Approved_On__c</field>
+        <formula>TODAY()</formula>
+        <name>Approved On</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved_Status_Change</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approved Status Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Back_To_Estimated</fullName>
+        <field>Status__c</field>
+        <literalValue>Estimated</literalValue>
+        <name>Change Back To Estimated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Declined</literalValue>
+        <name>Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejection</fullName>
+        <field>Status__c</field>
+        <literalValue>Declined</literalValue>
+        <name>Rejection</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Approved_Date</fullName>
+        <description>Set Approved Date to Today</description>
+        <field>Approved_On__c</field>
+        <formula>Today()</formula>
+        <name>Set_Approved_Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Approved_Flag</fullName>
+        <description>Set Approved checkbox to true</description>
+        <field>Approved__c</field>
+        <literalValue>true</literalValue>
+        <name>Set_Approved_Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_of_Pay_Status</fullName>
+        <field>Status__c</field>
+        <literalValue>Waiting for Approval</literalValue>
+        <name>Waiting for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Waiting_for_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Waiting for Approval</literalValue>
+        <name>Waiting for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Waiting_for_Approval_Status_Change</fullName>
+        <field>Status__c</field>
+        <literalValue>Waiting for Approval</literalValue>
+        <name>Waiting for Approval Status Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Waiting_for_Approval_Status_Change_1</fullName>
+        <field>Status__c</field>
+        <literalValue>Waiting for Approval</literalValue>
+        <name>Waiting for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <tasks>
+        <fullName>A_Record_of_Pay_Base_Pay_is_pending_your_approval</fullName>
+        <assignedTo>dworosilla@elevatedremodeling.net</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Record_of_Pay__c.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>A Record of Pay - Base Pay is pending your approval</subject>
+    </tasks>
+    <tasks>
+        <fullName>A_Record_of_Pay_is_pending_your_approval</fullName>
+        <assignedTo>dworosilla@elevatedremodeling.net</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>A Record of Pay is pending your approval</subject>
+    </tasks>
+</Workflow>

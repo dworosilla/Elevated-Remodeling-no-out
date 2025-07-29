@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>Quick Link to search for or create a new prospect.</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Start Here: Search &amp; Create</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(&apos;/apex/&apos;+ $Setup.i360__PRO_Namespace_Settings__c.i360__Sfdc_Prefix__c + &apos;ProspectSearch&apos;, null, null , false)}</url>
+</CustomPageWebLink>

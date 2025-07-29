@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>i361__Pay_25_Percent</fullName>
+        <description>Pay 25  percent of the Adjusted Commission Amount</description>
+        <field>i361__Ready_To_Pay__c</field>
+        <formula>i361__Ready_To_Pay__c + ( i361__Adjusted_Amount__c * 0.25)</formula>
+        <name>Pay 25 Percent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>i361__Pay_50_Percent</fullName>
+        <description>Adds 50  percent of the Adjusted Commission Amount</description>
+        <field>i361__Ready_To_Pay__c</field>
+        <formula>i361__Ready_To_Pay__c + ( i361__Adjusted_Amount__c  * 0.50)</formula>
+        <name>Pay 50 Percent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>i361__Pay_75_Percent</fullName>
+        <description>Pay 75 percent of the Adjusted Commission Amount</description>
+        <field>i361__Ready_To_Pay__c</field>
+        <formula>( i361__Ready_To_Pay__c + (i361__Adjusted_Amount__c * 0.75))</formula>
+        <name>Pay 75 Percent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>i361__Pay_Remaining_Balance</fullName>
+        <description>Pay the remaining balance of the adjusted commission amount.</description>
+        <field>i361__Ready_To_Pay__c</field>
+        <formula>i361__Adjusted_Amount__c</formula>
+        <name>Pay Remaining Balance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>i361__Pay full when the commission is created</fullName>
+        <actions>
+            <name>i361__Pay_Remaining_Balance</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>i361__Commission__c.i361__Amount__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>The whole amount of the commission is due upon creation of the commission.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>i361__Pay half when the sale goes net</fullName>
+        <actions>
+            <name>i361__Pay_50_Percent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>i361__Commission__c.i361__Sale_Status__c</field>
+            <operation>contains</operation>
+            <value>Net</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>i361__Commission__c.i361__Amount__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>When the associated sale goes net, mark half of the commission &apos;ready to pay&apos;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>i361__Pay remaining balance when the sale goes final</fullName>
+        <actions>
+            <name>i361__Pay_Remaining_Balance</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>i361__Commission__c.i361__Sale_Status__c</field>
+            <operation>contains</operation>
+            <value>Final</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>i361__Commission__c.i361__Amount__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>Pay the remaining balance of the commission when the sale is marked &apos;final&apos;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>i361__Ready To Pay Update</fullName>
+        <actions>
+            <name>i361__Pay_Remaining_Balance</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update the ready to pay amount whenever the sale is final or canceled and the adjusted amount field changes.</description>
+        <formula>CONTAINS( i361__Sale_Status__c , &apos;Final&apos;) ||  CONTAINS(i361__Sale_Status__c , &apos;Canceled&apos;) &amp;&amp; i361__Adjusted_Amount__c !=  i361__Ready_To_Pay__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

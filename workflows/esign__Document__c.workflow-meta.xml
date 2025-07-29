@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>esign__Counter_Sign_Request</fullName>
+        <description>Counter Sign Request</description>
+        <protected>false</protected>
+        <recipients>
+            <field>esign__Counter_Signed_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>esign__eSign_templates/esign__Cunter_Sign_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>esign__Email_alert_when_document_signed</fullName>
+        <description>Email to document owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>esign__eSign_templates/esign__Document_Signed_byRecipient_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>esign__Signature_Status_Counter_Sign_Required</fullName>
+        <description>Changes eSign Doc Signature Status to Counter Sign Required.</description>
+        <field>esign__Signature_Status__c</field>
+        <literalValue>Counter Sign Required</literalValue>
+        <name>Signature Status = Counter Sign Required</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>esign__eSign_Doc_Counter_Signed_Date_Now</fullName>
+        <description>Set Counter Signed Date to NOW()</description>
+        <field>esign__Counter_Signed_Date__c</field>
+        <formula>NOW()</formula>
+        <name>eSign Doc Counter Signed Date = Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>esign__eSign_Doc_Signature_Status_Signed</fullName>
+        <description>Change eSign Doc.Status to Signed.</description>
+        <field>esign__Signature_Status__c</field>
+        <literalValue>Signed</literalValue>
+        <name>eSign Doc Signature Status = Signed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>esign__Auto Counter Sign</fullName>
+        <actions>
+            <name>esign__eSign_Doc_Counter_Signed_Date_Now</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>esign__eSign_Doc_Signature_Status_Signed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6)</booleanFilter>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Counter_Signed_By__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Counter_Sign_Method__c</field>
+            <operation>equals</operation>
+            <value>Auto Counter Sign</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signature_Status__c</field>
+            <operation>equals</operation>
+            <value>Recipient Signed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+            <value>Not Required</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+            <value>Signed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Change Status to Signed if Auto Counter Sign and recipient signed.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>esign__Counter Sign Required</fullName>
+        <actions>
+            <name>esign__Signature_Status_Counter_Sign_Required</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Counter_Sign_Method__c</field>
+            <operation>equals</operation>
+            <value>Counter Sign Required</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signature_Status__c</field>
+            <operation>equals</operation>
+            <value>Recipient Signed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+            <value>Not Required</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+            <value>Signed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>When Recipient signs and counter sign required, changes Status to Counter Sign Required.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>esign__Document Counter Sign Required</fullName>
+        <actions>
+            <name>esign__Counter_Sign_Request</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Counter_Signed_By__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signature_Status__c</field>
+            <operation>equals</operation>
+            <value>Counter Sign Required</value>
+        </criteriaItems>
+        <description>Email notification to counter sign user that counter signature is needed.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>esign__Document Signed By Recipient</fullName>
+        <actions>
+            <name>esign__Email_alert_when_document_signed</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Recipient_Signed__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Document Signed By Recipient Notification</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>esign__No Counter Sign Needed</fullName>
+        <actions>
+            <name>esign__eSign_Doc_Signature_Status_Signed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Counter_Sign_Method__c</field>
+            <operation>equals</operation>
+            <value>No Counter Sign Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signature_Status__c</field>
+            <operation>equals</operation>
+            <value>Recipient Signed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+            <value>Not Required</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+            <value>Signed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>esign__Document__c.esign__Signer_2_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Update Signature Status to Completed if Recipient signed and no counter sign is needed.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>
