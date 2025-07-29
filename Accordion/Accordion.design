@@ -1,4 +1,0 @@
-<design:component>
-    <design:attribute name="isOpen" label="Is Open" description="Is the accordion open?" />
-    <design:attribute name="title" label="Title" description="Title of the accordion section" />
-</design:component>
