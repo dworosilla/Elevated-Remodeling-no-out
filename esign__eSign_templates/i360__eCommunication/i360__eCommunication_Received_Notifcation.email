@@ -1,0 +1,12 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p>This email is being sent to inform you that a new eCommunication has been sent to your improve<span style="font-style: italic;"><span style="font-weight: bold;">it!<span style="font-weight: bold;"><span style="font-style: italic;"> 360</span></span></span><span style="font-style: italic;"></span></span> Business Management System.<br><br>To access the eCommunication, select the link below and enter your credentials into the login page provided:</p>
+<p>&nbsp;</p>
+{!Contact.Description}<br> 
+<p align="left"><br>You can access all eCommunications at any time by logging into improve<strong><em>it! 360</em></strong> from <a href="http://improveit360.com//Login">http://improveit360.com/Login</a> and clicking on the eCommunications tab.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Thank you,</p>
+<p align="left">improve<strong><em>it! 360</em></strong></p>]]></td>
+</tr>
+</table>

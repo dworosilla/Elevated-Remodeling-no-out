@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<font face="arial" size="3">Dear {!i360__Appointment__c.i360__Correspondence_Name__c},</font><br><br><font face="arial" size="3">Thank you for the chance to showcase our products and services! I enjoyed meeting with you. </font><br><br><font face="arial" size="3">Since we are constantly responding to customers' expectations, to new trends, products, and changes in the industry, I will keep in touch with the hope that in the near future, we'll be able to meet your needs. </font><br><br><font face="arial" size="3">If you have any questions or need additional information, feel free to contact us at {!Organization.Phone}.</font><br><br><font face="arial" size="3">Sincerely,</font><br><font face="arial" size="3">{!Organization.Name}</font><br><font face="arial" size="3">{!Organization.Phone}</font><br><div><br></div>]]></td>
+</tr>
+</table>

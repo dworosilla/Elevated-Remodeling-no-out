@@ -1,0 +1,151 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p class="MsoNormal"><link rel="File-List" href="file:///C:%5CDOCUME%7E1%5Ckkaliebe%5CLOCALS%7E1%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_filelist.xml"><link rel="themeData" href="file:///C:%5CDOCUME%7E1%5Ckkaliebe%5CLOCALS%7E1%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_themedata.thmx"><link rel="colorSchemeMapping" href="file:///C:%5CDOCUME%7E1%5Ckkaliebe%5CLOCALS%7E1%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_colorschememapping.xml">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-alt:"Calisto MT";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073750139 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</p>
+<p class="MsoNormal"><b><span style="color: red; font-size: 10.5pt;"><font face="Arial,Sans-Serif">The following appointment has been CANCELED:</font></span></b> </p>
+<p></p>
+<h4><u><span>Appointment Detail</span></u><span><o:p></o:p></span></h4>
+<table style="width: 375pt;" class="MsoNormalTable" width="500" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="padding: 3.75pt; width: 75pt;" valign="top" width="100">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Status:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Status__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Type:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Type__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Date:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Start__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Time:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Start_Time__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Duration:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Duration__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Interest(s):<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Interests_Summary__c}</span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Rep&nbsp;1:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Sales_Rep_1__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Rep&nbsp;2:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Sales_Rep_2__c}</span><span style="font-family: 'Calibri','sans-serif'; font-size: 11pt;"><o:p></o:p></span></p></td></tr></tbody></table>
+<h4><u><span>Appointment For</span></u><span><o:p></o:p></span></h4>
+<table style="width: 375pt;" class="MsoNormalTable" width="500" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="padding: 3.75pt; width: 75pt;" valign="top" width="100">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Name:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Correspondence_Name__c}</span></p>
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';"><o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Address:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Address__c}<br>{!i360__Appointment__c.i360__City__c}, {!i360__Appointment__c.i360__State__c} {!i360__Appointment__c.i360__Zip__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Phone:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Prospect_Phone__c}<o:p></o:p></span></p></td></tr></tbody></table>
+<h4><u><span>Source Information</span></u><span><o:p></o:p></span></h4>
+<table style="width: 375pt;" class="MsoNormalTable" width="500" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="padding: 3.75pt; width: 75pt;" valign="top" width="100">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Source Type:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Source_Type__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Source:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;"><span style="font-family: Arial,Sans-Serif;">{!i360__Appointment__c.i360__Source__c}</span><br></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Taken By:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Leadsource_Taker__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Taken On:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Leadsource_Taken_On__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Component(s):<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Leadsource_Components__c}<o:p></o:p></span></p></td></tr></tbody></table>
+<p class="MsoNormal"><br><br><font face="Arial,Sans-Serif"><b>- improveit! 360 Appointment Team.</b> <br></font></p>]]></td>
+</tr>
+</table>

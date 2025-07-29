@@ -1,0 +1,26 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<p>Dear {!i360__Sale__c.i360__Correspondence_Name__c},<br><span style="" sans-serif="" ;="" color:="" black;\=""></span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;"></span><br></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">As one of our valued customers, we hope you have been happy with the work completed by {!Organization.Name}. Our customers are central to the success of our business, and it has been our pleasure to serve you.</span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;"></span>&nbsp;</p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">If you are satisfied with the work that has been completed by {!Organization.Name}, we ask that you recommend us to your friends, family, and neighbors. Our customers are our best salespeople, and you can have the opportunity to earn valuable rewards for your referrals that can be applied toward future purchases. For more information on our referral program, please contact us at the phone number listed below.<o:p></o:p></span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">&nbsp;<o:p></o:p></span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">We greatly value your business and look forward to serving you in the future!<o:p></o:p></span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">&nbsp;<o:p></o:p></span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">Thank You,<o:p></o:p></span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">&nbsp;<o:p></o:p></span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">{!Organization.Name}<o:p></o:p></span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">{!Organization.Address}</span></p>
+<p><span style="font-family: 'Arial','sans-serif'; color: black;">Phone: {!Organization.Phone}</span></p><p>{!User.i360__Company_Website_URL__c}<br><span style="font-family: 'Arial','sans-serif'; color: black;"><o:p></o:p></span></p>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[]]></td>
+</tr>
+</table>

@@ -1,0 +1,419 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="2" style="font-weight: bold">
+        <tr>
+            <td width="35%" style="vertical-align: top" align="left">
+                Appointment For: {!i360__Appointment__c.i360__StartDateTime__c}
+            </td>
+            <td width="35%" style="vertical-align: top" align="left">
+                {!Organization.Name}
+            </td>
+        </tr>
+    </table><br />
+    <table width="100%" cellspacing="0" cellpadding="2">
+        <tr>
+            <td width="45%" style="vertical-align: top">
+                <table border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td style="vertical-align: top">
+                            Name(s):
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Correspondence_Name__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Address:
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Address__c}<br />
+                            {!i360__Appointment__c.i360__City__c}, {!i360__Appointment__c.i360__State__c} {!i360__Appointment__c.i360__Zip__c}<br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Phone(s):
+                        </td>
+                        <td>
+                            {!i360__Prospect__c.i360__Phone_1__c} {!i360__Prospect__c.i360__Phone_1_Type__c}<br />
+                            {!i360__Prospect__c.i360__Phone_2__c} {!i360__Prospect__c.i360__Phone_2_Type__c}<br />
+                            {!i360__Prospect__c.i360__Phone_3__c} {!i360__Prospect__c.i360__Phone_3_Type__c}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="45%" style="vertical-align: top">
+                <table cellspacing="0" cellpadding="2" style="border: 1px solid black;">
+                    <tr>
+                        <td style="vertical-align: top">
+                            Status:
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Appointment_Status__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Type:
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Type__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Date / Time:
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__StartDateTime__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Duration:
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Duration__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Rep 1:
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Sales_Rep_1__r.Name}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Rep 2:
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Sales_Rep_2__r.Name}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="45%" style="vertical-align: top">
+                <span style="font-weight: bold">Source Information</span>
+                <table border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td style="vertical-align: top">
+                            Source Type:
+                        </td>
+                        <td>
+                            {!i360__Lead_Source__c.i360__Source_Type__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Source:
+                        </td>
+                        <td>
+                            {!i360__Lead_Source__c.i360__Source__r.Name}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Taken By:
+                        </td>
+                        <td>
+                            {!i360__Lead_Source__c.i360__Taker__r.Name}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Taken On:
+                        </td>
+                        <td>
+                            {!i360__Lead_Source__c.i360__Taken_On__c}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="45%" style="vertical-align: top">
+                <span style="font-weight: bold">Demographic Information</span>
+                <table border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td style="vertical-align: top">
+                            Year Home Built:
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__RRP_Status__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Year Home Purchased:
+                        </td>
+                        <td>
+                            {!i360__Prospect__c.i360__Year_Home_Purchased__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Structure Type:
+                        </td>
+                        <td>
+                            {!i360__Prospect__c.i360__Structure_Type__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Household Income:
+                        </td>
+                        <td>
+                            {!i360__Prospect__c.i360__Household_Income__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">
+                            Home Value:
+                        </td>
+                        <td>
+                            {!i360__Prospect__c.i360__Home_Value__c}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="90%" style="vertical-align: top" colspan="2">
+                <span style="font-weight: bold">Interests</span>
+                <table width="100%" border="0" cellspacing="0" cellpadding="2" style="margin-bottom: 10px">
+                    <tr>
+                        <td style="font-weight: bold;vertical-align: top">
+                            Component
+                        </td>
+                        <td style="font-weight: bold;vertical-align: top">
+                            Color
+                        </td>
+                        <td style="font-weight: bold;vertical-align: top">
+                            Type
+                        </td>
+                        <td style="font-weight: bold;vertical-align: top">
+                            Quantity
+                        </td>
+                        <td style="font-weight: bold;vertical-align: top">
+                            Description
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[0].i360__Component__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[0].i360__Color__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[0].i360__Type__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[0].i360__Quantity_Display__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[0].i360__Description__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[1].i360__Component__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[1].i360__Color__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[1].i360__Type__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[1].i360__Quantity_Display__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[1].i360__Description__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[2].i360__Component__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[2].i360__Color__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[2].i360__Type__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[2].i360__Quantity_Display__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[2].i360__Description__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[3].i360__Component__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[3].i360__Color__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[3].i360__Type__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[3].i360__Quantity_Display__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[3].i360__Description__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[4].i360__Component__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[4].i360__Color__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[4].i360__Type__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[4].i360__Quantity_Display__c}
+                        </td>
+                        <td>
+                            {!i360__Appointment__c.i360__Interests__r[4].i360__Description__c}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="vertical-align: top">
+                <span style="font-weight: bold">Comments</span>
+                <table border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td>
+                            {!i360__Appointment__c.i360__Comments__c}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="vertical-align: top">
+                <span style="font-weight: bold">Results</span>
+                <table width="100%" border="1" cellspacing="0" cellpadding="2" style="font-size: 9pt">
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            Sold:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            Demoed, Not Sold:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            Follow-up:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            Not Demoed:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            One Leg:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            No Show:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            Not Run:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            Not Covered:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            Not Confirmed:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" style="vertical-align: top">
+                            Canceled:
+                        </td>
+                        <td width="2%">
+                            <div style="float: left; width: 10px; height: 10px; border: 1px solid black;">
+                                &nbsp;</div>
+                        </td>
+                        <td width="70%">&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>

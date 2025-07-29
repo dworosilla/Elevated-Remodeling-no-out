@@ -1,0 +1,11 @@
+Dear {!Connection.ExternalContactFirstName}:
+
+We are happy to inform you that your invitation to connect has been accepted. 
+
+We look forward to sharing success with you as we work together in the future.
+
+Sincerely,
+
+
+{!User.FirstName} {!User.LastName}
+{!Organization.Name}

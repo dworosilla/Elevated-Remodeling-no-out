@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is the template for emails to staff notifying them of a scheduled appointment.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>i360__Internal_Letterhead</letterhead>
+    <name>Staff Appointment Notification</name>
+    <style>freeForm</style>
+    <subject>Appt on {!i360__Appointment__c.i360__Start__c} {!i360__Appointment__c.i360__Start_Time__c} with {!i360__Appointment__c.i360__Prospect_Primary__c}</subject>
+    <textOnly>An appointment has been set for you, please see the details below: 
+
+Appointment Detail
+Type:                      {!i360__Appointment__c.i360__Type__c}
+Date:                      {!i360__Appointment__c.i360__Start__c}
+Time:                      {!i360__Appointment__c.i360__Start_Time__c}
+Duration:                {!i360__Appointment__c.i360__Duration__c}
+
+Interest(s):     {!i360__Appointment__c.i360__Interests_Summary__c}
+Rep 1:                     {!i360__Appointment__c.i360__Sales_Rep_1__c}
+Rep 2:                     {!i360__Appointment__c.i360__Sales_Rep_2__c}
+
+Appointment For
+Name(s):            {!i360__Appointment__c.i360__Correspondence_Name__c}
+Address:             {!i360__Appointment__c.i360__Address__c}
+                           {!i360__Appointment__c.i360__City__c}, {!i360__Appointment__c.i360__State__c} {!i360__Appointment__c.i360__Zip__c}
+Phone:                 {!i360__Appointment__c.i360__Prospect_Phone__c}
+
+Source Information
+Source Type:       {!i360__Appointment__c.i360__Source_Type__c}
+Source:                 {!i360__Appointment__c.i360__Source__c}
+Taken By:             {!i360__Appointment__c.i360__Leadsource_Taker__c}
+Taken On:            {!i360__Appointment__c.i360__Leadsource_Taken_On__c}
+Component(s):   {!i360__Appointment__c.i360__Leadsource_Components__c}
+
+- improveit! 360 Appointment Team. 
+(Lead Sheet and VCalendar are attached)</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

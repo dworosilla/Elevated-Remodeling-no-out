@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is the template for emails to staff notifying them of a canceled project activity appointment.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Staff Project Activity Cancelation</name>
+    <style>none</style>
+    <subject>CANCELED: Appt on {!i360__Project_Activity__c.i360__Start__c} with {!i360__Project_Activity__c.i360__Correspondence_Name__c} - {!i360__Project_Activity__c.Name}</subject>
+    <textOnly>A project activity has been assigned to you, please see the details below:
+
+
+
+{!i360__Project__c.Name}
+
+
+Customer Information:
+
+Name:   {!i360__Project__c.i360__Customer_Name__c}
+Address:   {!i360__Project__c.i360__Appointment_Address__c}
+{!i360__Project__c.i360__Appointment_City__c}, {!i360__Project__c.i360__Appointment_State__c}{!i360__Project__c.i360__Appointment_Zip__c}
+Phone:   {!i360__Project__c.i360__Prospect_Phone__c}
+Sold On:   {!i360__Project__c.Sold_On__c}
+Sold Price:   {!i360__Project__c.i360__Sold_Price__c}
+Balance Due:   {!i360__Project__c.Balance_Due__c}
+
+
+
+Special Instructions/Directions:
+(Enter special instructions and/or directions here)
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+
+
+
+
+Other Information:
+
+Project State Date:   {!i360__Project__c.i360__Start_Date__c}
+Project Manager:   {!i360__Project__c.i360__Project_Manager__c}
+Installation Crew:    {!i360__Project__c.i360__Installation_Crew__c}
+Sales Rep:   {!i360__Project__c.i360__Sale_Rep__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

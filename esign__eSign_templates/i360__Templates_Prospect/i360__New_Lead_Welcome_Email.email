@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[Dear {!i360__Prospect__c.i360__Correspondence_Name__c},<br><br>Thank you for your most recent request for information about our business and our products! We've added you to our mailing list so you can receive updates on special promotions, upcoming events, and new products we offer. <br><br>If you have any questions or need additional information, don't hesitate to reach out to us directly at {!Organization.Phone}.<br><br>We hope to exceed your expectations and look forward to serving you soon!<br><br>Sincerely, <br>{!Organization.Name}<br>{!Organization.Phone}<br>]]></td>
+</tr>
+</table>

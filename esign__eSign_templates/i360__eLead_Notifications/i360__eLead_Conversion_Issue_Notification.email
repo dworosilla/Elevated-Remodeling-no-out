@@ -1,0 +1,13 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P>This email is being sent to inform you that there has been a conversion issue while attempting to convert one or more eLeads to Lead Sources. Your manual intervention is required in order to successfully convert the eLead into your system.</P>
+<P>&nbsp;</P>
+<P>Unconverted eLeads:</P>
+<P>{!Contact.Description}</P>
+<P>&nbsp;</P>
+<P>Please see the 'Unconverted eLeads' view in the eLeads tab to view and manually convert them.</P>
+<P>&nbsp;</P>Thank you, 
+<P>improve<B><I>it! 360</I></B></P>]]></td>
+</tr>
+</table>

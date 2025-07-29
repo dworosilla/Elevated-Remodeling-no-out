@@ -1,0 +1,21 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<p>Dear {!i360__Appointment__c.i360__Correspondence_Name__c},</p>
+<p>&nbsp;</p>
+<p>This email is to confirm cancelation of your appointment that was scheduled to occur on {!i360__Appointment__c.i360__Start__c} at {!i360__Appointment__c.i360__Start_Time__c}.</p>
+<p>&nbsp;</p>
+<p>Thank you for your interest in our products, and we hope you will think of us before your next remodeling project.</p>
+<p>&nbsp;</p>{!Organization.Name} 
+<p>{!Organization.Address}</p>
+<p>Phone: {!Organization.Phone}</p><p>{!User.i360__Company_Website_URL__c}<br></p><p><br></p>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[]]></td>
+</tr>
+</table>

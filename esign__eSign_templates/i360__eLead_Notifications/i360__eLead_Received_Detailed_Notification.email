@@ -1,0 +1,13 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[This email is being sent to inform you that one or more new eLeads have been sent to your improve<span style="font-style: italic;"><span style="font-weight: bold;">it! 360</span></span> Business Management System.<div><br></div><div>Name:&nbsp;<span class="Apple-tab-span" style="white-space:pre">		</span>{!i360__eLead__c.i360__First_Name__c}&nbsp;{!i360__eLead__c.i360__Last_Name__c}</div><div>Interested in:&nbsp;<span class="Apple-tab-span" style="white-space:pre">	</span>{!i360__eLead__c.i360__Components__c}</div><div>Phone:&nbsp;<span class="Apple-tab-span" style="white-space:pre">		</span>{!i360__eLead__c.i360__Phone__c}</div><div>Email:<span class="Apple-tab-span" style="white-space:pre">		{!i360__eLead__c.i360__Email__c}</span></div><div>Comments:<span class="Apple-tab-span" style="white-space:pre">	</span>{!i360__eLead__c.i360__Comments__c}</div><div>Source:&nbsp;<span class="Apple-tab-span" style="white-space:pre">		</span>{!i360__eLead__c.i360__Source__c}</div><div>Address:<span class="Apple-tab-span" style="white-space:pre">		{!i360__eLead__c.i360__Address_1__c}</span>&nbsp;{!i360__eLead__c.i360__Address_2__c}</div><div><span class="Apple-tab-span" style="white-space:pre">			</span>{!i360__eLead__c.i360__City__c},&nbsp;{!i360__eLead__c.i360__State_Province__c}&nbsp;{!i360__eLead__c.i360__Zip__c}</div><div><br>To access the eLead(s), select the link below and enter your credentials into the login page provided:<br><br>
+<p>Received eLeads:</p>
+<p>{!Contact.Description}</p>
+<p><br></p>
+<p>You can access all eLeads at any time by logging into improve<span style="font-style: italic;"><span style="font-weight: bold;">it! 360</span></span> from <a href="http://www.improveit360.com/Login">http://www.improveit360.com/Login</a> and clicking on the eLeads tab.</p>
+<p><br></p>
+<p>Thank you,</p>
+<p>improve<span style="font-style: italic;"><span style="font-weight: bold;">it! 360</span></span></p></div>]]></td>
+</tr>
+</table>

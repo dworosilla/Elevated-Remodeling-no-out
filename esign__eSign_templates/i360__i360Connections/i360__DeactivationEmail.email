@@ -1,0 +1,11 @@
+Dear {!Connection.ExternalContactFirstName}: 
+
+This email has been sent to notify you that your connection with {!Organization.Name} has been deactivated. 
+
+If you have questions, please contact us at the number below. 
+
+Sincerely, 
+
+{!User.FirstName} {!User.LastName} 
+{!Organization.Name} 
+{!Organization.Phone}

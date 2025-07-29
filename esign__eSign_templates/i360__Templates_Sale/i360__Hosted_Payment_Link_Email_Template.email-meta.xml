@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template for Payment link</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Hosted Payment Link Email Template</name>
+    <style>none</style>
+    <subject>Easily make your payment online!</subject>
+    <textOnly>Hi,
+
+Dear {!i360__Sale__c.i360__Correspondence_Name__c},
+
+Thank you valued customer. You can now make your payments online! Click the link below to use our payment portal.
+
+
+Sale ID: {!i360__Sale__c.i360__Sale_ID__c}
+
+Sale Name: {!i360__Sale__c.Name}
+
+Sold Price: {!i360__Sale__c.i360__Sold_Price__c}
+
+Total Received: {!i360__Sale__c.i360__Total_Receipts__c}
+
+Balance Due: {!i360__Sale__c.i360__Balance_Due__c}
+
+Current Payment Link Amount: {!i360__Sale__c.i360__Payment_Link_Amount__c}
+
+
+Click this link to make your payment: {!i360__Sale__c.i360__Hosted_Payment_Link__c}
+
+
+You may keep this email for your records.
+
+Thank You,
+
+{!Organization.Name}
+
+{!Organization.Address}
+
+Phone: {!$Organization.Phone}
+
+{!User.i360__Company_Website_URL__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

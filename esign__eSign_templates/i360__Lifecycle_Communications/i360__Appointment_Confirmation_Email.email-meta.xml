@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Default email sent to a prospect to confirm an appointment</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>i360__Lifecycle_Email_Letterhead</letterhead>
+    <name>Appointment Confirmation Email</name>
+    <style>formalLetter</style>
+    <subject>Appointment Confirmation for {!i360__Appointment__c.i360__Start__c}</subject>
+    <textOnly>Dear {!i360__Appointment__c.i360__Correspondence_Name__c}, 
+ 
+Thank you for your interest in {!Organization.Name} . This email is to confirm your appointment on {!i360__Appointment__c.i360__Start__c} at {!i360__Appointment__c.i360__Start_Time__c} at the following location:
+ 
+{!i360__Appointment__c.i360__Address__c}
+{!i360__Appointment__c.i360__City__c}, {!i360__Appointment__c.i360__State__c} {!i360__Appointment__c.i360__Zip__c}
+ 
+Our representative(s) will be demonstrating the following products: 
+{!i360__Appointment__c.i360__Components_1__c}
+{!i360__Appointment__c.i360__Components_2__c}
+{!i360__Appointment__c.i360__Components_3__c}
+
+
+Thank You,
+ 
+{!Organization.Name} 
+{!Organization.Street}
+{!Organization.City}, {!Organization.State} {!Organization.PostalCode}
+Phone: {!Organization.Phone}
+{!User.i360__Company_Website_URL__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

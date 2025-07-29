@@ -1,0 +1,92 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p class="MsoNormal" style="font-family: arial;">An appointment has been set for you, please see the details below: </p>
+<h4 style="font-family: arial;"><u><span>Appointment Detail</span></u></h4><br>
+<table style="width: 500px; height: 204px;" class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Type:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Type__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Date:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Start__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Time:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Start_Time__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><font class="Apple-style-span" face="Arial, sans-serif">Duration:<o:p></o:p></font></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><font class="Apple-style-span" face="Arial, sans-serif">{!i360__Appointment__c.i360__Duration__c}<o:p></o:p></font></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><font class="Apple-style-span" face="Arial, sans-serif">Interest(s):<o:p></o:p></font></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><font class="Apple-style-span" face="Arial, sans-serif">{!i360__Appointment__c.i360__Interests_Summary__c}<br></font></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><font class="Apple-style-span" face="Arial, sans-serif">Rep&nbsp;1:<o:p></o:p></font></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><font class="Apple-style-span" face="Arial, sans-serif">{!i360__Appointment__c.i360__Sales_Rep_1__r.Name}<o:p></o:p></font></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><font class="Apple-style-span" face="Arial, sans-serif">Rep&nbsp;2:<o:p></o:p></font></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><font class="Apple-style-span" face="Arial, sans-serif">{!i360__Appointment__c.i360__Sales_Rep_2__r.Name}</font></p>
+</td></tr></tbody></table><h4 style="font-family: arial;"><u><span>Appointment For</span></u><span><o:p></o:p></span></h4>
+<table style="width: 375pt; font-family: arial;" class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0" width="500">
+<tbody>
+<tr>
+<td style="padding: 3.75pt; width: 75pt;" valign="top" width="100">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Name:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Correspondence_Name__c}</span></p>
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';"><o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Address:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Address__c}<br>{!i360__Appointment__c.i360__City__c}, {!i360__Appointment__c.i360__State__c} {!i360__Appointment__c.i360__Zip__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Phone:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Prospect_Phone__c}<o:p></o:p></span></p></td></tr></tbody></table>
+<h4 style="font-family: arial;"><u><span>Source Information</span></u><span><o:p></o:p></span></h4>
+<table style="width: 375pt; font-family: arial;" class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0" width="500">
+<tbody>
+<tr>
+<td style="padding: 3.75pt; width: 75pt;" valign="top" width="100">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Source Type:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Source_Type__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Source:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Source__r.Name}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Taken By:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Leadsource_Taker__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Taken On:<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Leadsource_Taken_On__c}<o:p></o:p></span></p></td></tr>
+<tr>
+<td style="padding: 3.75pt;" valign="top">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">Component(s):<o:p></o:p></span></p></td>
+<td style="padding: 3.75pt;">
+<p class="MsoNormal"><span style="font-family: 'Arial','sans-serif';">{!i360__Appointment__c.i360__Leadsource_Components__c}<o:p></o:p></span></p></td></tr></tbody></table>
+<p class="MsoNormal" style="font-family: arial;"><br><br><font face="Arial,Sans-Serif"><b>- improveit! 360 Appointment Team.</b> <br><br>(VCalendar is attached)</font> </p>]]></td>
+</tr>
+</table>

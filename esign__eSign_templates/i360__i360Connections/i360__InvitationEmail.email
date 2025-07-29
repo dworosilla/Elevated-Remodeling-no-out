@@ -1,0 +1,16 @@
+Dear {!Connection.ExternalContactFirstName}: 
+
+This is an invitation to connect with {!Organization.Name}. By accepting this connection, your organization will be able to receive sales leads and other corporate information from {!Organization.Name}, resulting in improved communication, better customer service, and enhanced company performance! 
+
+We believe that connecting our two companies is the next logical step in our business relationship and will only foster greater collaboration and success for both companies. 
+
+We hope you will accept our invitation by clicking the following link: 
+{!Connection.InvitationURL} 
+
+I look forward to working with you to achieve continued success for both our companies. 
+
+
+Sincerely, 
+
+{!User.FirstName} {!User.LastName} 
+{!Organization.Name}

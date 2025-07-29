@@ -1,0 +1,30 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<br><p>Dear {!i360__Appointment__c.i360__Correspondence_Name__c}, </p>
+<p>&nbsp;</p>
+<p>Thank you for your interest in {!Organization.Name} . This email is to confirm your appointment on {!i360__Appointment__c.i360__Start__c} at {!i360__Appointment__c.i360__Start_Time__c} at the following location:</p>
+<p>&nbsp;</p>
+<p>{!i360__Appointment__c.i360__Address__c}</p>
+<p>{!i360__Appointment__c.i360__City__c}, {!i360__Appointment__c.i360__State__c} {!i360__Appointment__c.i360__Zip__c}</p>
+<p>&nbsp;</p>
+<p>Our representative(s) will be demonstrating the following products: </p>
+<p>{!i360__Appointment__c.i360__Components_1__c}</p>
+<p>{!i360__Appointment__c.i360__Components_2__c}</p>
+<p>{!i360__Appointment__c.i360__Components_3__c}</p>
+<p><br></p>
+<p>Thank You,</p>
+<p>&nbsp;</p>
+<p>{!Organization.Name} </p>
+<p>{!Organization.Street}</p>
+<p>{!Organization.City}, {!Organization.State} {!Organization.PostalCode}</p><p>Phone: {!Organization.Phone}</p><p>{!User.i360__Company_Website_URL__c}<br></p>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[]]></td>
+</tr>
+</table>

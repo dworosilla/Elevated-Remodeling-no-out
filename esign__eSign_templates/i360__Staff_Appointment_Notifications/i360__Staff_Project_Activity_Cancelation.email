@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Tue, 19 Jun 2012 19:26:12 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<table>
+	   <tr> 
+	   	   <td>The following Project Activity has been CANCELED:</td>
+	   </tr>
+</table>
+<br>
+<br>
+<table>
+	   <tr>
+	   <td>
+<h3>{!i360__Project_Activity__c.i360__Project__c}</h3></td> </tr>
+</table>
+<br>
+
+
+<b>Customer Information:</b>
+<table>
+
+	   <tr> 
+	   		<td>Name: </td>
+	   		<td>{!i360__Project_Activity__c.i360__Correspondence_Name__c}</td>
+		</tr>
+	   <tr>
+	   	   <td>Address: </td>
+		   <td>{!i360__Project_Activity__c.i360__Appointment_Address__c}</td>
+		</tr>   
+	   	<tr> 
+		   <td> </td>
+		   <td> {!i360__Project_Activity__c.i360__Appointment_City__c}, {!i360__Project_Activity__c.i360__Appointment_State__c}{!i360__Project_Activity__c.i360__Appointment_Zip__c}</td>
+		</tr>   
+	   <tr>
+	   	   <td>Phone: </td>
+		   <td>{!i360__Project_Activity__c.i360__Customer_Phone__c} </td>
+	   </tr>
+	   <tr> 
+	   		<td>Sold On: </td>
+			<td>{!i360__Project_Activity__c.i360__Sold_On__c}</td>
+	  </tr>
+		   <tr> 
+	   		<td>Balance Due: </td>
+	   		<td>{!i360__Project_Activity__c.i360__Balance_Due__c}</td>
+	   </tr>
+</table>  
+<br> <br>
+<table>
+<tr><b>Special Instructions/Directions:</b></tr>
+<tr><td>
+{!i360__Project_Activity__c.i360__Comments__c}</td></tr>
+</table>
+
+<br>
+<br>
+<br>
+<b>Other Information:</b>
+<table>
+	   <tr>
+	   	   <td>Project Start Date: </td>
+		   <td>{!i360__Project_Activity__c.i360__Project_Start_Date__c}</td>
+	   </tr>
+<tr>
+	   	   <td>Appointment Time: </td>
+		   <td>{!i360__Project_Activity__c.i360__Start__c} - {!i360__Project_Activity__c.i360__End__c}</td>
+	   </tr>
+	   <tr> 
+	   		<td>Project Manager: </td>
+			<td>{!i360__Project_Activity__c.i360__Project_Manager__c}</td>
+		</tr>
+	   <tr> 
+	   		<td>Installation Crew:  </td>
+			<td> {!i360__Project_Activity__c.i360__Installation_Crew__c}</td>
+		</tr>
+	   <tr> 
+	   		<td>Sales Rep: </td>
+			<td>{!i360__Project_Activity__c.i360__Sale_Rep__c}</td>
+		</tr>
+</table>
+</body>
+</html>

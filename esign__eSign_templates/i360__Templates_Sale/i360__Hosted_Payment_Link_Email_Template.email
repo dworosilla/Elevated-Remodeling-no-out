@@ -1,0 +1,20 @@
+<p><img src="{!$Setup.i360__Company_Logos_for_Payment_Email__c.i360__Improveit360Logo__c}" alt="logo"></img>
+</p>
+<p>Hi,</p>
+<p>Dear {!i360__Sale__c.i360__Correspondence_Name__c},</p>
+<p>Thank you valued customer. You can now make your payments online! Click the link below to use our payment portal.</p><br/>
+<p>Sale ID: {!i360__Sale__c.i360__Sale_ID__c}</p>
+<p>Sale Name: {!i360__Sale__c.Name}</p>
+<p>Sold Price: {!i360__Sale__c.i360__Sold_Price__c}</p>
+<p>Total Received: {!i360__Sale__c.i360__Total_Receipts__c}</p>
+<p>Balance Due: {!i360__Sale__c.i360__Balance_Due__c}</p>
+<p>Current Payment Link Amount: {!i360__Sale__c.i360__Payment_Link_Amount__c}</p>
+<br/>
+<p>Click this link to make your payment: {!i360__Sale__c.i360__Hosted_Payment_Link__c}</p><br/>
+You may keep this email for your records.
+<br/>
+<p>Thank You,</p>
+<p>{!Organization.Name}</p>
+<p>{!Organization.Address}</p>
+<p>Phone: {!$Organization.Phone}</p>
+<p>{!User.i360__Company_Website_URL__c}</p>

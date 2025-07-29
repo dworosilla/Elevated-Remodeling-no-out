@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template used when notifying that eLead(s) have been received. Contains more information that the basic &apos;eLead Received Notification&apos; template.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>i360__Internal_Letterhead</letterhead>
+    <name>eLead Received Detailed Notification</name>
+    <style>freeForm</style>
+    <subject>Notification of new eLead(s)</subject>
+    <textOnly>This email is being sent to inform you that one or more new eLeads have been sent to your improveit! 360 Business Management System.
+Name: 	{!i360__eLead__c.i360__First_Name__c} {!i360__eLead__c.i360__Last_Name__c}
+Interested in: 	{!i360__eLead__c.i360__Components__c}Phone: 	{!i360__eLead__c.i360__Phone__c}
+Email:	{!i360__eLead__c.i360__Email__c}
+Comments:	{!i360__eLead__c.i360__Comments__c}
+Source: 	{!i360__eLead__c.i360__Source__c}
+Address:	{!i360__eLead__c.i360__Address_1__c} {!i360__eLead__c.i360__Address_2__c}	{!i360__eLead__c.i360__City__c}, {!i360__eLead__c.i360__State_Province__c} {!i360__eLead__c.i360__Zip__c}
+
+To access the eLead(s), select the link below and enter your credentials into the login page provided:
+
+Received eLeads:
+{!Contact.Description}
+
+You can access all eLeads at any time by logging into improveit! 360 from http://www.improveit360.com/Login and clicking on the eLeads tab.
+
+
+Thank you,
+improveit! 360</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

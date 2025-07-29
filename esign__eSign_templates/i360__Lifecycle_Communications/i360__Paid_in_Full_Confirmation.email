@@ -1,0 +1,30 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<p>Dear {!i360__Sale__c.i360__Correspondence_Name__c},</p>
+<p>&nbsp;</p>
+<p>Thank you for your recent payment. The following order has been paid in full:</p>
+<p>&nbsp;</p>
+<p>Sale ID: {!i360__Sale__c.i360__Sale_ID__c}</p>
+<p>Sale Name: {!i360__Sale__c.Name}</p>
+<p>Sold Price: {!i360__Sale__c.i360__Sold_Price__c}</p>
+<p>Total Received: {!i360__Sale__c.i360__Total_Receipts__c}</p>
+<p>Balance Due: {!i360__Sale__c.i360__Balance_Due__c}</p>
+<p>&nbsp;</p>
+<p>You may keep this email for your records.</p>
+<p>&nbsp;</p>
+<p>Thank You,</p>
+<p>&nbsp;</p>
+<p>{!Organization.Name}</p>
+<p>{!Organization.Address}</p>
+<p>Phone: {!Organization.Phone}</p><p>{!User.i360__Company_Website_URL__c}<br></p>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[]]></td>
+</tr>
+</table>
