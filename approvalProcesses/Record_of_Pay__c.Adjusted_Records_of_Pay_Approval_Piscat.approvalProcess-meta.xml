@@ -11,10 +11,20 @@
         <field>Date__c</field>
         <field>Appointment__c</field>
         <field>Margin__c</field>
+        <field>Adjusted_Close_Price__c</field>
         <field>Sale_Status__c</field>
-        <field>Pay_Amount__c</field>
+        <field>Pay_Type__c</field>
+        <field>Base_Pay_Amount__c</field>
+        <field>Base_Commission_Amount__c</field>
         <field>Daily_Bonus_Amount__c</field>
         <field>Margin_Bonus_Amount__c</field>
+        <field>Self_Gen_Commission_Amount__c</field>
+        <field>Sign_On_Bonus_Amount__c</field>
+        <field>Monthly_Bonus_Amount__c</field>
+        <field>Yearly_Bonus__c</field>
+        <field>Number_of_Appointments__c</field>
+        <field>Market_Segment__c</field>
+        <field>Sale__c</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
@@ -26,7 +36,23 @@
         </approvalActions>
         <assignedApprover>
             <approver>
+                <name>bharperjr@elevatedremodeling.net</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>brandond.elevatedremodeling@gmail.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
                 <name>dworosilla@elevatedremodeling.net</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>erobbins@elevatedremodeling.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>mhughes@elevatedremodeling.net</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -42,7 +68,7 @@
             <value>True</value>
         </criteriaItems>
         <criteriaItems>
-            <field>Record_of_Pay__c.Market_Segment__c</field>
+            <field>Employee__c.Market_Segment2__c</field>
             <operation>equals</operation>
             <value>&quot;Piscataway, NJ&quot;</value>
         </criteriaItems>

@@ -14,6 +14,7 @@
         <field>Adjusted_Close_Price__c</field>
         <field>Sale_Status__c</field>
         <field>Pay_Type__c</field>
+        <field>Base_Pay_Amount__c</field>
         <field>Base_Commission_Amount__c</field>
         <field>Daily_Bonus_Amount__c</field>
         <field>Margin_Bonus_Amount__c</field>
@@ -22,7 +23,8 @@
         <field>Monthly_Bonus_Amount__c</field>
         <field>Yearly_Bonus__c</field>
         <field>Number_of_Appointments__c</field>
-        <field>Canvasser_Sign_On_Bonus__c</field>
+        <field>Market_Segment__c</field>
+        <field>Sale__c</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
@@ -34,7 +36,27 @@
         </approvalActions>
         <assignedApprover>
             <approver>
+                <name>bharperjr@elevatedremodeling.net</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>brandond.elevatedremodeling@gmail.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
                 <name>dworosilla@elevatedremodeling.net</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>erobbins@elevatedremodeling.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>jgarnett@elevatedremodeling.net</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>tdelong@elevatedremodeling.net</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -44,28 +66,41 @@
     </approvalStep>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
-        <formula>AND( TEXT( Appointment__r.i360__Market_Segment2__c ) = &apos;Newark, DE&apos;,
-OR(
-    Sale_Status_Changed__c = TRUE,
-  AND(
-    TEXT(Pay_Type__c) = &quot;Sign-On Bonus&quot;,
-    TEXT(Status__c) = &quot;Estimated&quot;
-  ),
-  AND(
-    TEXT(Status__c) = &quot;Sale Canceled - Needs Approval&quot;,
-    NOT(ISBLANK(Record_of_Pay_Being_Adjusted__c))
-  ),
-  AND(
+        <formula>AND(
+    TEXT(Employee__r.Market_Segment2__c) = &quot;Newark, DE&quot;,
     OR(
-      Timeframe__c = &quot;Day&quot;,
-      Timeframe__c = &quot;Weekly&quot;,
-      Timeframe__c = &quot;BiWeekly&quot;,
-      Timeframe__c = &quot;Monthly&quot;,
-      Timeframe__c = &quot;Yearly&quot;
-    ),
-    TEXT(Status__c) = &quot;Estimated&quot;
-  )
-))</formula>
+        Sale_Status_Changed__c = TRUE,
+        AND(
+            TEXT(Pay_Type__c) = &quot;Base Pay&quot;,
+            TEXT(Status__c) = &quot;Estimated&quot;,
+            OR(
+                Number_of_Appointments__c != null, Number_of_Days_Worked__c != null
+            )
+        ),
+        AND(
+            TEXT(Pay_Type__c) = &quot;Sign-On Bonus&quot;,
+            TEXT(Status__c) = &quot;Estimated&quot;
+        ),
+        AND(
+            TEXT(Status__c) = &quot;Sale Canceled - Needs Approval&quot;,
+            NOT(ISBLANK(Record_of_Pay_Being_Adjusted__c))
+        ),
+        AND(
+            OR(
+                Timeframe__c = &quot;Day&quot;,
+                Timeframe__c = &quot;Weekly&quot;,
+                Timeframe__c = &quot;BiWeekly&quot;,
+                Timeframe__c = &quot;Monthly&quot;,
+                Timeframe__c = &quot;Yearly&quot;
+            ),
+            TEXT(Status__c) = &quot;Estimated&quot;
+        ),
+        AND(
+            TEXT(Pay_Type__c) = &quot;No Demo Appointment&quot;,
+            TEXT(Status__c) = &quot;Estimated&quot;
+        )
+    )
+)</formula>
     </entryCriteria>
     <finalApprovalActions>
         <action>
@@ -85,7 +120,13 @@ OR(
         </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>Records of Pay Approval - Newark, DE</label>
+    <initialSubmissionActions>
+        <action>
+            <name>Update_Status_to_Waiting</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Records of Pay Approval - Newark</label>
     <processOrder>1</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>

@@ -14,6 +14,7 @@
         <field>Adjusted_Close_Price__c</field>
         <field>Sale_Status__c</field>
         <field>Pay_Type__c</field>
+        <field>Base_Pay_Amount__c</field>
         <field>Base_Commission_Amount__c</field>
         <field>Daily_Bonus_Amount__c</field>
         <field>Margin_Bonus_Amount__c</field>
@@ -22,28 +23,46 @@
         <field>Monthly_Bonus_Amount__c</field>
         <field>Yearly_Bonus__c</field>
         <field>Number_of_Appointments__c</field>
+        <field>Market_Segment__c</field>
+        <field>Sale__c</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Waiting_for_Approval_Status_Change_1</name>
+                <name>Update_Record_of_Pay_Status</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
+                <name>bharperjr@elevatedremodeling.net</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>brandond.elevatedremodeling@gmail.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
                 <name>dworosilla@elevatedremodeling.net</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>erobbins@elevatedremodeling.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>mhughes@elevatedremodeling.net</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>Waiting for Approval</label>
-        <name>Waiting_for_Approval_Status_Change</name>
+        <name>Waiting_for_Approval</name>
     </approvalStep>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
-        <formula>AND( TEXT(Appointment__r.i360__Market_Segment2__c) = &apos;Piscataway, NJ&apos;,
+        <formula>AND( TEXT(Employee__r.Market_Segment2__c) = &apos;Piscataway, NJ&apos;,
 Sale_Status_Changed__c = FALSE,
 OR(
 Sale_Status__c = &apos;Net&apos;,
@@ -54,34 +73,24 @@ Sale_Status__c = &apos;Final&apos;
     </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>Approved_1</name>
+            <name>Approved_Checkbox_Update</name>
             <type>FieldUpdate</type>
         </action>
         <action>
-            <name>Approved_Checkbox_Update_1</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Approved_On</name>
+            <name>Update_Status_to_Approved</name>
             <type>FieldUpdate</type>
         </action>
     </finalApprovalActions>
-    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
-            <name>Rejection</name>
+            <name>Rejected</name>
             <type>FieldUpdate</type>
         </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <label>Records of Pay Already Net Piscataway</label>
     <processOrder>6</processOrder>
-    <recallActions>
-        <action>
-            <name>Change_Back_To_Estimated</name>
-            <type>FieldUpdate</type>
-        </action>
-    </recallActions>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>
