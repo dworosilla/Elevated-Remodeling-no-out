@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="recordId" type="String" />
+
+    <!-- Define regions for each tab -->
+    <c:accordionWithPicklist recordId="{!v.recordId}">
+        <!-- Region for first tab -->
+        <aura:set attribute="firstTab">
+            {!v.firstTab}
+        </aura:set>
+        <!-- Region for second tab -->
+        <aura:set attribute="secondTab">
+            {!v.secondTab}
+        </aura:set>
+        <!-- Additional regions as needed -->
+    </c:accordionWithPicklist>
+</aura:component>
