@@ -1,0 +1,4 @@
+<design:component label="Aura Header New Container">
+    <design:attribute name="containerTitle" label="Container Title"/>
+    <design:attribute name="containerIcon" label="Container Icon"/>
+</design:component>

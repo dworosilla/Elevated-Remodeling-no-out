@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+    <!-- Attributes for the header title and icon -->
+    <aura:attribute name="containerTitle" type="String" default="Related Records"/>
+    <aura:attribute name="containerIcon" type="String" default="utility:info"/>
+    
+    <!-- The body attribute (of type Aura.Component[]) will hold any dropped child components -->
+    <aura:attribute name="body" type="Aura.Component[]"/>
+
+    <!-- Container markup -->
+    <div class="headerNewAuraContainer">
+        <header class="headerNewAuraHeader">
+            <div class="iconContainer">
+                <lightning:icon iconName="{!v.containerIcon}" size="small" alternativeText="{!v.containerTitle}"/>
+            </div>
+            <div class="headerTitle">{!v.containerTitle}</div>
+        </header>
+        <div class="headerNewAuraBody">
+            {!v.body}
+        </div>
+    </div>
+</aura:component>
