@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Countersign Request</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Countersign Request</name>
+    <style>none</style>
+    <subject>Countersignature Required</subject>
+    <textOnly>A countersignature is required on a document just signed.
+
+Countersign the document here:
+{!esign__Document__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

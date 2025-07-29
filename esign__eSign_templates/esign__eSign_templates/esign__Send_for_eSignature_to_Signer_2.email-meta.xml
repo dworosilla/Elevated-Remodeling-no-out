@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Send for eSignature to Signer 2</name>
+    <style>none</style>
+    <subject>Document for Signer 2 Signature</subject>
+    <textOnly>Please review and sign the document.
+
+{!esign__Document__c.esign__Signer_2_Link__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,3 @@
+A countersignature is required on a document just signed.
+<br><br>
+<a href="{!esign__Document__c.Link}">Click Here to countersign the document</a>.

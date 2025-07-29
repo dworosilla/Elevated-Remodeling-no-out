@@ -1,0 +1,3 @@
+<p>
+			<span style="font-family:arial,helvetica,sans-serif;">Please review and sign the document.&nbsp;<br />
+			<a href="{!esign__Document__c.esign__eSign_Link__c}"><img alt="Click Here to Sign" src="{!esign__Document__c.esign__eSign_Link_Domain__c}/Images/Email-Button.png" style="width: 194px; height: 54px;" /></a></span></p>
