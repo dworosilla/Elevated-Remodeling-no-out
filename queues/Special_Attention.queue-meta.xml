@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Special Attention</name>
+    <queueMembers>
+        <users>
+            <user>adibartolo@elevatedremodeling.net</user>
+            <user>bcannarella@elevatedremodeling.net</user>
+            <user>brandond.elevatedremodeling@gmail.com</user>
+            <user>borr@elevatedremodeling.net</user>
+            <user>craymond@elevatedremodeling.net</user>
+            <user>cwright@elevatedremodeling.net</user>
+            <user>erobbins@elevatedremodeling.com</user>
+            <user>f.emachah@gmail.com</user>
+            <user>gmckendrick@elevatedremodeling.net</user>
+            <user>ktinklepaugh@elevatedremodeling.net</user>
+            <user>rwright@elevatedremodeling.net</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>i361__Campaign__c</sobjectType>
+    </queueSobject>
+</Queue>

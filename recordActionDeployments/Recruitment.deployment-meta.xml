@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordActionDeployment xmlns="http://soap.sforce.com/2006/04/metadata">
+    <componentName>ActionsAndRecommendations</componentName>
+    <deploymentContexts>
+        <entityName>Candidate__c</entityName>
+    </deploymentContexts>
+    <deploymentContexts>
+        <entityName>Contact</entityName>
+    </deploymentContexts>
+    <deploymentContexts>
+        <entityName>Interview__c</entityName>
+    </deploymentContexts>
+    <deploymentContexts>
+        <entityName>Opportunity</entityName>
+    </deploymentContexts>
+    <hasComponents>false</hasComponents>
+    <hasGuidedActions>false</hasGuidedActions>
+    <hasOmniscripts>false</hasOmniscripts>
+    <hasRecommendations>true</hasRecommendations>
+    <masterLabel>Recruitment</masterLabel>
+    <recommendation>
+        <hasDescription>true</hasDescription>
+        <hasImage>true</hasImage>
+        <hasRealtimeRecommendations>false</hasRealtimeRecommendations>
+        <hasRejectAction>true</hasRejectAction>
+        <hasTitle>true</hasTitle>
+        <maxDisplayRecommendations>1</maxDisplayRecommendations>
+        <shouldLaunchActionOnReject>false</shouldLaunchActionOnReject>
+    </recommendation>
+</RecordActionDeployment>

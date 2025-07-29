@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Internet Only</name>
+    <queueMembers>
+        <users>
+            <user>asolway@elevatedremodeling.net</user>
+            <user>asmall@elevatedremodeling.net</user>
+            <user>acochran@elevatedremodeling.net</user>
+            <user>bbroad@elevatedremodeling.net</user>
+            <user>bpeacock@elevatedremodeling.net</user>
+            <user>blin@elevatedremodeling.net</user>
+            <user>ckilgore@elevatedremodeling.net</user>
+            <user>dgildea@elevatedremodeling.net</user>
+            <user>dcharest@elevatedremodeling.net</user>
+            <user>dnorris@elevatedremodeling.net</user>
+            <user>dtucker@elevatedremodeling.net</user>
+            <user>eevans@elevatedremodeling.net</user>
+            <user>fiacono@elevatedremodeling.net</user>
+            <user>imulligan@elevatedremodeling.net</user>
+            <user>jhallett@elevatedremodeling.net</user>
+            <user>jpolk@elevatedremodeling.net</user>
+            <user>jlarry@elevatedremodeling.net</user>
+            <user>jmcgettigan@elevatedremodeling.net</user>
+            <user>jazeltine@elevatedremodeling.net</user>
+            <user>jconner@elevatedremodeling.net</user>
+            <user>jwright@elevatedremodeling.net</user>
+            <user>jcooper@elevatedremodeling.net</user>
+            <user>kvargas@elevatedremodeling.net</user>
+            <user>msheppard@elevatedremodeling.net</user>
+            <user>mtaylor@elevatedremodeling.net</user>
+            <user>mislam@elevatedremodeling.net</user>
+            <user>mpackard@elevatedremodeling.net</user>
+            <user>nveasey@elevatedremodeling.net</user>
+            <user>shubbard@elevatedremodeling.net</user>
+            <user>ssanza@elevatedremodeling.net</user>
+            <user>ttownsend@elevatedremodeling.net</user>
+            <user>tyoung@elevatedremodeling.net</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>i361__Campaign__c</sobjectType>
+    </queueSobject>
+</Queue>

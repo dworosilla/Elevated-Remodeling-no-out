@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Leads</name>
+    <queueMembers>
+        <users>
+            <user>avasquez@elevatedremodeling.net</user>
+            <user>jhallett@elevatedremodeling.net</user>
+            <user>jhavens@elevatedremodeling.net</user>
+            <user>jmcgettigan@elevatedremodeling.net</user>
+            <user>kmclaughlin@elevatedremodeling.net</user>
+            <user>labreu-pena@elevatedremodeling.net</user>
+            <user>tyoung@elevatedremodeling.net</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>i361__Campaign__c</sobjectType>
+    </queueSobject>
+</Queue>
