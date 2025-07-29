@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+    </customValue>
+    <customValue>
+        <fullName>Rehash</fullName>
+        <default>false</default>
+        <label>Rehash</label>
+    </customValue>
+    <customValue>
+        <fullName>Reset</fullName>
+        <default>false</default>
+        <label>Reset</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Assurance</fullName>
+        <default>false</default>
+        <label>Quality Assurance</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancel Save</fullName>
+        <default>false</default>
+        <label>Cancel Save</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract Visit</fullName>
+        <default>false</default>
+        <label>Contract Visit</label>
+    </customValue>
+    <customValue>
+        <fullName>Previous Customer</fullName>
+        <default>false</default>
+        <label>Previous Customer</label>
+    </customValue>
+    <masterLabel>Appointment Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

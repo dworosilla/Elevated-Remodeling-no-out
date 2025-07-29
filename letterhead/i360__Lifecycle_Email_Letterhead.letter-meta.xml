@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Letterhead xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <backgroundColor>#CCCCCC</backgroundColor>
+    <bodyColor>#FFFFFF</bodyColor>
+    <bottomLine>
+        <color>#FFFFFF</color>
+        <height>0</height>
+    </bottomLine>
+    <description>Letterhead contains the CompanyLogo image (which can be uploaded into the CompanyLogo image under Documents --&gt; Template Images) in the header area of the email. This letterhead is used for all lifecycle emails.</description>
+    <footer>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>0</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <verticalAlignment>Top</verticalAlignment>
+    </footer>
+    <header>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>0</height>
+        <horizontalAlignment>Right</horizontalAlignment>
+        <logo>i360__Template_Images/logo2.jpg</logo>
+        <verticalAlignment>Middle</verticalAlignment>
+    </header>
+    <middleLine>
+        <color>#FFFFFF</color>
+        <height>0</height>
+    </middleLine>
+    <name>Lifecycle Email Letterhead - Default</name>
+    <topLine>
+        <color>#FFFFFF</color>
+        <height>5</height>
+    </topLine>
+</Letterhead>

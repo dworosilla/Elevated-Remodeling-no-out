@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Marketer</fullName>
+        <default>false</default>
+        <label>Marketer</label>
+    </customValue>
+    <customValue>
+        <fullName>Senior Marketer</fullName>
+        <default>false</default>
+        <label>Senior Marketer</label>
+    </customValue>
+    <customValue>
+        <fullName>Veteran</fullName>
+        <default>false</default>
+        <label>Veteran</label>
+    </customValue>
+    <customValue>
+        <fullName>Elite</fullName>
+        <default>false</default>
+        <label>Elite</label>
+    </customValue>
+    <customValue>
+        <fullName>Legendary</fullName>
+        <default>false</default>
+        <label>Legendary</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Manager</fullName>
+        <default>false</default>
+        <label>Marketing Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Senior Marketing Manager</fullName>
+        <default>false</default>
+        <label>Senior Marketing Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Director of Marketing</fullName>
+        <default>false</default>
+        <label>Director of Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>VP of Marketing</fullName>
+        <default>false</default>
+        <label>VP of Marketing</label>
+    </customValue>
+    <masterLabel>Employee Level</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

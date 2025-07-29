@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Newark, DE</fullName>
+        <default>false</default>
+        <label>Newark, DE</label>
+    </customValue>
+    <customValue>
+        <fullName>Piscataway, NJ</fullName>
+        <default>false</default>
+        <label>Piscataway, NJ</label>
+    </customValue>
+    <masterLabel>Market Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

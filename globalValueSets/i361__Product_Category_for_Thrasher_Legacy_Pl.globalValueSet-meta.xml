@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>--to be determined--</fullName>
+        <default>false</default>
+        <label>--to be determined--</label>
+    </customValue>
+    <description>Product Category (for Thrasher Legacy Plans)</description>
+    <masterLabel>Product Category (for Thrasher Legacy Pl</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

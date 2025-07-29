@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Payroll - All</fullName>
+        <default>false</default>
+        <label>Payroll - All</label>
+    </customValue>
+    <customValue>
+        <fullName>Payroll - Sales - Newark</fullName>
+        <default>false</default>
+        <label>Payroll - Sales - Newark</label>
+    </customValue>
+    <customValue>
+        <fullName>Payroll - Sales - Piscataway</fullName>
+        <default>false</default>
+        <label>Payroll - Sales - Piscataway</label>
+    </customValue>
+    <masterLabel>Access Groups</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

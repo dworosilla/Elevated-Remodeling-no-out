@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Measure</fullName>
+        <default>false</default>
+        <label>Measure</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit</fullName>
+        <default>false</default>
+        <label>Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Order</fullName>
+        <default>false</default>
+        <label>Order</label>
+    </customValue>
+    <customValue>
+        <fullName>Receive</fullName>
+        <default>false</default>
+        <label>Receive</label>
+    </customValue>
+    <customValue>
+        <fullName>Install</fullName>
+        <default>false</default>
+        <label>Install</label>
+    </customValue>
+    <masterLabel>Project Activity Name Values</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

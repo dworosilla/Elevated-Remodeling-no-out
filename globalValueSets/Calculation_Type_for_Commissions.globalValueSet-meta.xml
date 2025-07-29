@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Marketing Bonus</fullName>
+        <default>false</default>
+        <label>Marketing Bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Commission</fullName>
+        <default>false</default>
+        <label>Sales Commission</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Bonus</fullName>
+        <default>false</default>
+        <label>Sales Bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Sign on Bonus</fullName>
+        <default>false</default>
+        <label>Sales Sign on Bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Base Pay</fullName>
+        <default>false</default>
+        <label>Base Pay</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Sign On Bonus</fullName>
+        <default>false</default>
+        <label>Marketing Sign On Bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Estimate Bonus</fullName>
+        <default>false</default>
+        <label>Marketing Estimate Bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing 2 Week Estimate</fullName>
+        <default>false</default>
+        <label>Marketing 2 Week Estimate</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Commission</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Marketing Commission</label>
+    </customValue>
+    <masterLabel>Calculation Type for Commissions</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

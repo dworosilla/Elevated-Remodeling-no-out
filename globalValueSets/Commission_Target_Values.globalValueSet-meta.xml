@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Number of Appointments</fullName>
+        <default>false</default>
+        <label>Number of Appointments</label>
+    </customValue>
+    <customValue>
+        <fullName>Number of Sales</fullName>
+        <default>false</default>
+        <label>Number of Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Sale Amount</fullName>
+        <default>false</default>
+        <label>Sale Amount</label>
+    </customValue>
+    <customValue>
+        <fullName>Sale Amount &amp; Margin</fullName>
+        <default>false</default>
+        <label>Sale Amount &amp; Margin</label>
+    </customValue>
+    <customValue>
+        <fullName>Monthly</fullName>
+        <default>false</default>
+        <label>Monthly</label>
+    </customValue>
+    <customValue>
+        <fullName>Yearly</fullName>
+        <default>false</default>
+        <label>Yearly</label>
+    </customValue>
+    <customValue>
+        <fullName>Base Commission</fullName>
+        <default>false</default>
+        <label>Base Commission</label>
+    </customValue>
+    <customValue>
+        <fullName>Days Worked</fullName>
+        <default>false</default>
+        <label>Days Worked</label>
+    </customValue>
+    <customValue>
+        <fullName>Self Gen</fullName>
+        <default>false</default>
+        <label>Self Gen</label>
+    </customValue>
+    <customValue>
+        <fullName>Weeks Worked</fullName>
+        <default>false</default>
+        <label>Weeks Worked</label>
+    </customValue>
+    <customValue>
+        <fullName>Weekly Sale Amount</fullName>
+        <default>false</default>
+        <label>Weekly Sale Amount</label>
+    </customValue>
+    <customValue>
+        <fullName>Weekly Base Pay</fullName>
+        <default>false</default>
+        <label>Weekly Base Pay</label>
+    </customValue>
+    <customValue>
+        <fullName>Shadow</fullName>
+        <default>false</default>
+        <label>Shadow</label>
+    </customValue>
+    <customValue>
+        <fullName>Closing Bonus</fullName>
+        <default>false</default>
+        <label>Closing Bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Net Volume</fullName>
+        <default>false</default>
+        <label>Net Volume</label>
+    </customValue>
+    <customValue>
+        <fullName>Estimate / Lead Count</fullName>
+        <default>false</default>
+        <label>Estimate / Lead Count</label>
+    </customValue>
+    <masterLabel>Commission Target Values</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

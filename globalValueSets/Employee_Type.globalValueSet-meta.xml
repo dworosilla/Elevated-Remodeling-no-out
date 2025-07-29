@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Canvasser</fullName>
+        <default>false</default>
+        <label>Canvasser</label>
+    </customValue>
+    <customValue>
+        <fullName>Inside Sales</fullName>
+        <default>false</default>
+        <label>Inside Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Call Center</fullName>
+        <default>false</default>
+        <label>Call Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Manager</fullName>
+        <default>false</default>
+        <label>Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesmen</fullName>
+        <default>false</default>
+        <label>Salesmen</label>
+    </customValue>
+    <customValue>
+        <fullName>Installer</fullName>
+        <default>false</default>
+        <label>Installer</label>
+    </customValue>
+    <customValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Canvasser/Van Manager</fullName>
+        <default>false</default>
+        <label>Canvasser/Van Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Recruiter</fullName>
+        <default>false</default>
+        <label>Recruiter</label>
+    </customValue>
+    <customValue>
+        <fullName>Executive</fullName>
+        <default>false</default>
+        <label>Executive</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </customValue>
+    <masterLabel>Employee Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
